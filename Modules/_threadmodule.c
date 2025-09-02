@@ -473,6 +473,7 @@ static int
 join_thread(void *arg)
 {
     ThreadHandle *handle = (ThreadHandle*)arg;
+    fprintf(stdout, "[Thread] Join: pythread id %d\n", handle->ident);
     assert(get_thread_handle_state(handle) == THREAD_HANDLE_RUNNING);
     PyThread_handle_t os_handle;
     if (ThreadHandle_get_os_handle(handle, &os_handle)) {

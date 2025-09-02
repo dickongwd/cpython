@@ -324,6 +324,7 @@ _pthread_t_to_ident(pthread_t value) {
 #endif
 }
 
+// This is the one used by the threading module
 int
 PyThread_start_joinable_thread(void (*func)(void *), void *arg,
                                PyThread_ident_t* ident, PyThread_handle_t* handle) {
@@ -334,6 +335,7 @@ PyThread_start_joinable_thread(void (*func)(void *), void *arg,
     *ident = _pthread_t_to_ident(th);
     *handle = (PyThread_handle_t) th;
     assert(th == (pthread_t) *handle);
+    fprintf(stdout, "[Thread] Start: pythread id %d\n", *ident);
     return 0;
 }
 
