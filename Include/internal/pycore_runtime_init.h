@@ -117,6 +117,7 @@ extern PyTypeObject _PyExc_MemoryError;
                 }, \
             }, \
         }, \
+        .sched_list = _PySchedList_INIT, \
         ._main_interpreter = _PyInterpreterState_INIT(runtime._main_interpreter), \
     }
 
@@ -190,6 +191,12 @@ extern PyTypeObject _PyExc_MemoryError;
 
 
 // global objects
+
+#define _PySchedList_INIT \
+    { \
+        .lock = 0, \
+        .head = NULL, \
+    }
 
 #define _PyBytes_SIMPLE_INIT(CH, LEN) \
     { \

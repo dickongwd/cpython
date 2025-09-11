@@ -335,7 +335,8 @@ PyThread_start_joinable_thread(void (*func)(void *), void *arg,
     *ident = _pthread_t_to_ident(th);
     *handle = (PyThread_handle_t) th;
     assert(th == (pthread_t) *handle);
-    fprintf(stdout, "[Thread] Start: pythread id %d\n", *ident);
+    // fprintf(stderr, "[Thread] Start: pythread id %d\n", *ident);
+    // fflush(stderr);
     return 0;
 }
 

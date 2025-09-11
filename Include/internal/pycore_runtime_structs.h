@@ -137,6 +137,16 @@ struct _Py_static_objects {
     } singletons;
 };
 
+struct SchedNode {
+    unsigned long thread_id;
+    struct SchedNode *next;
+};
+
+struct SchedList {
+    int lock;
+    struct SchedNode *head;
+};
+
 /* Full Python runtime state */
 
 /* _PyRuntimeState holds the global state for the CPython runtime.
@@ -288,6 +298,9 @@ struct pyruntimestate {
     /* All the objects that are shared by the runtime's interpreters. */
     struct _Py_cached_objects cached_objects;
     struct _Py_static_objects static_objects;
+
+    /* Represents the queue for the Pray scheduler. */
+    struct SchedList sched_list;
 
     /* The following fields are here to avoid allocation during init.
        The data is exposed through _PyRuntimeState pointer fields.

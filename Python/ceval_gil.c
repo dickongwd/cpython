@@ -209,6 +209,8 @@ drop_gil_impl(PyThreadState *tstate, struct _gil_runtime_state *gil)
         tstate->holds_gil = 0;
     }
     COND_SIGNAL(gil->cond);
+    fprintf(stderr, "[GIL] pythread id %d has dropped the GIL\n", tstate->thread_id);
+    fflush(stderr);
     MUTEX_UNLOCK(gil->mutex);
 }
 
@@ -319,9 +321,27 @@ take_gil(PyThreadState *tstate)
     assert(gil_created(gil));
 
     MUTEX_LOCK(gil->mutex);
+    fprintf(stderr, "im %d called take_gil\n", tstate->thread_id);
 
     int drop_requested = 0;
-    while (_Py_atomic_load_int_relaxed(&gil->locked)) {
+    while (true) {
+
+        int locked = _Py_atomic_load_int_relaxed(&gil->locked);
+        pthread_mutex_lock(&_PyRuntime.sched_list.lock);
+        bool exists = _PyRuntime.sched_list.head;
+        unsigned long front;
+        if (exists) front = _PyRuntime.sched_list.head->thread_id;
+        pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+        if (!locked && !exists) break;
+        if (!locked && exists && front == tstate->thread_id) break;
+        //   || (_PyRuntime.sched_front != NULL && _PyRuntime.sched_front != tstate)) {
+        // fprintf(stderr, "hello\n");
+        // fprintf(stderr, "sched front is %d\n", _PyRuntime.sched_front);
+        // fprintf(stderr, "sched front thread is %d\n", _PyRuntime.sched_front->thread_id);
+        fprintf(stderr, "im %d trying to get gil\n", tstate->thread_id);
+        fprintf(stderr, "locked is %d\n", locked);
+        fprintf(stderr, "front is %d\n", front);
+        // if (front) fprintf(stderr, "front thread id is %d\n", front->thread_id);
         unsigned long saved_switchnum = gil->switch_number;
 
         unsigned long interval = _Py_atomic_load_ulong_relaxed(&gil->interval);
@@ -335,7 +355,8 @@ take_gil(PyThreadState *tstate)
            to ask the GIL-holding thread to drop it. */
         if (timed_out &&
             _Py_atomic_load_int_relaxed(&gil->locked) &&
-            gil->switch_number == saved_switchnum)
+            // gil->switch_number == saved_switchnum)
+            false)
         {
             PyThreadState *holder_tstate =
                 (PyThreadState*)_Py_atomic_load_ptr_relaxed(&gil->last_holder);
@@ -377,6 +398,8 @@ take_gil(PyThreadState *tstate)
        see drop_gil(). */
     MUTEX_LOCK(gil->switch_mutex);
 #endif
+    fprintf(stderr, "[GIL] pythread id %d has taken the GIL\n", tstate->thread_id);
+    fflush(stderr);
     /* We now hold the GIL */
     _Py_atomic_store_int_relaxed(&gil->locked, 1);
     _Py_ANNOTATE_RWLOCK_ACQUIRED(&gil->locked, /*is_write=*/1);

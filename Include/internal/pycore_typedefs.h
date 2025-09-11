@@ -9,6 +9,8 @@
 extern "C" {
 #endif
 
+typedef struct SchedNode SchedNode;
+typedef struct SchedList SchedList;
 typedef struct _PyInterpreterFrame _PyInterpreterFrame;
 typedef struct pyruntimestate _PyRuntimeState;
 

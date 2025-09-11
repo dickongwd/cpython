@@ -356,6 +356,10 @@ thread_run(void *boot_raw)
     PyEval_AcquireThread(tstate);
     _Py_atomic_add_ssize(&tstate->interp->threads.count, 1);
 
+    fprintf(stderr, "[Thread] Start: pythread id %d\n", handle->ident);
+    fflush(stderr);
+    PySchedList_Push(tstate->thread_id);
+
     PyObject *res = PyObject_Call(boot->func, boot->args, boot->kwargs);
     if (res == NULL) {
         if (PyErr_ExceptionMatches(PyExc_SystemExit))
@@ -371,6 +375,10 @@ thread_run(void *boot_raw)
     }
 
     thread_bootstate_free(boot, 1);
+
+    PySchedList_Remove(tstate->thread_id);
+    fprintf(stderr, "[Thread] Join: pythread id %d\n", handle->ident);
+    fflush(stderr);
 
     _Py_atomic_add_ssize(&tstate->interp->threads.count, -1);
     PyThreadState_Clear(tstate);
@@ -473,7 +481,8 @@ static int
 join_thread(void *arg)
 {
     ThreadHandle *handle = (ThreadHandle*)arg;
-    fprintf(stdout, "[Thread] Join: pythread id %d\n", handle->ident);
+    // fprintf(stderr, "[Thread] Join: pythread id %d\n", handle->ident);
+    // fflush(stderr);
     assert(get_thread_handle_state(handle) == THREAD_HANDLE_RUNNING);
     PyThread_handle_t os_handle;
     if (ThreadHandle_get_os_handle(handle, &os_handle)) {

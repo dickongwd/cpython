@@ -11,6 +11,9 @@ extern "C" {
 removed (with effort). */
 #define MAX_CO_EXTRA_USERS 255
 
+PyAPI_FUNC(void) PySchedList_Push(unsigned long);
+PyAPI_FUNC(void) PySchedList_Remove(unsigned long);
+
 PyAPI_FUNC(PyInterpreterState *) PyInterpreterState_New(void);
 PyAPI_FUNC(void) PyInterpreterState_Clear(PyInterpreterState *);
 PyAPI_FUNC(void) PyInterpreterState_Delete(PyInterpreterState *);

@@ -45,6 +45,56 @@ to avoid the expense of doing their own locking).
 #  endif
 #endif
 
+// Add this thread to the back of the scheduler queue.
+void PySchedList_Push(unsigned long thread_id) {
+    pthread_mutex_lock(&_PyRuntime.sched_list.lock);
+    if (_PyRuntime.sched_list.head == NULL) {
+        _PyRuntime.sched_list.head = (SchedNode *)PyMem_Malloc(sizeof(SchedNode));
+        _PyRuntime.sched_list.head->thread_id = thread_id;
+        _PyRuntime.sched_list.head->next = NULL;
+        pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+        return;
+    }
+
+    SchedNode *cur = _PyRuntime.sched_list.head;
+    while (cur->next != NULL) {
+        cur = cur->next;
+    }
+    cur->next = (SchedNode *)PyMem_Malloc(sizeof(SchedNode));
+    cur->next->thread_id = thread_id;
+    cur->next->next = NULL;
+    pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+}
+
+// Remove the specified thread id in the queue.
+void PySchedList_Remove(unsigned long thread_id) {
+    pthread_mutex_lock(&_PyRuntime.sched_list.lock);
+    if (_PyRuntime.sched_list.head == NULL) {
+        pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+        return;
+    }
+
+    if (_PyRuntime.sched_list.head->thread_id == thread_id) {
+        SchedNode *next = _PyRuntime.sched_list.head->next;
+        PyMem_Free(_PyRuntime.sched_list.head);
+        _PyRuntime.sched_list.head = next;
+        pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+        return;
+    }
+
+    SchedNode *cur = _PyRuntime.sched_list.head;
+    while (cur->next != NULL && cur->next->thread_id != thread_id) {
+        cur = cur->next;
+    }
+
+    if (cur->next != NULL && cur->next->thread_id == thread_id) {
+        SchedNode *next = cur->next->next;
+        PyMem_Free(cur->next);
+        cur->next = next;
+    }
+    pthread_mutex_unlock(&_PyRuntime.sched_list.lock);
+}
+
 
 /****************************************/
 /* helpers for the current thread state */
