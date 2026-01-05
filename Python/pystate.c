@@ -24,6 +24,7 @@
 #include "pycore_stackref.h"      // Py_STACKREF_DEBUG
 #include "pycore_time.h"          // _PyTime_Init()
 #include "pycore_uniqueid.h"      // _PyObject_FinalizePerThreadRefcounts()
+#include "pycore_scheduler.h"     // _PyScheduler_Init()
 
 
 /* --------------------------------------------------------------------------
@@ -658,6 +659,7 @@ init_interpreter(PyInterpreterState *interp,
     _PyGC_InitState(&interp->gc);
     PyConfig_InitPythonConfig(&interp->config);
     _PyType_InitCache(interp);
+    _PyScheduler_Init(&interp->scheduler, interp);
 #ifdef Py_GIL_DISABLED
     _Py_brc_init_state(interp);
 #endif

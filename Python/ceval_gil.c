@@ -413,6 +413,10 @@ take_gil(PyThreadState *tstate)
 
     MUTEX_UNLOCK(gil->mutex);
 
+#ifdef Py_DEBUG
+    fprintf(stderr, "Random number: %d\n", _PyScheduler_GetNext(&interp->scheduler));
+#endif
+
     errno = err;
     return;
 }

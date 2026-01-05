@@ -14,6 +14,7 @@ extern "C" {
 #include "pycore_structs.h"       // PyHamtObject
 #include "pycore_tstate.h"        // _PyThreadStateImpl
 #include "pycore_typedefs.h"      // _PyRuntimeState
+#include "pycore_scheduler.h"     // _PyScheduler
 
 
 #define CODE_MAX_WATCHERS 8
@@ -966,6 +967,8 @@ struct _is {
     _Py_hashtable_t *closed_stackrefs_table;
 #  endif
 #endif
+
+    _PyScheduler scheduler;
 
     /* the initial PyInterpreterState.threads.head */
     _PyThreadStateImpl _initial_thread;

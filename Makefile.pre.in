@@ -487,6 +487,7 @@ PYTHON_OBJS=	\
 		Python/pytime.o \
 		Python/qsbr.o \
 		Python/bootstrap_hash.o \
+		Python/scheduler.o \
 		Python/specialize.o \
 		Python/stackrefs.o \
 		Python/structmember.o \
