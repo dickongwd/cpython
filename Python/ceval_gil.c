@@ -7,6 +7,7 @@
 #include "pycore_pylifecycle.h"   // _PyErr_Print()
 #include "pycore_pystats.h"       // _Py_PrintSpecializationStats()
 #include "pycore_runtime.h"       // _PyRuntime
+#include "pycore_scheduler.h"     // SCHEDULER_STATE
 
 
 /*
@@ -643,6 +644,7 @@ PyThreadState *
 PyEval_SaveThread(void)
 {
     PyThreadState *tstate = _PyThreadState_GET();
+    tstate->scheduler_state = SCHEDULER_STATE_BLOCKED;
     _PyThreadState_Detach(tstate);
     return tstate;
 }
@@ -656,6 +658,7 @@ PyEval_RestoreThread(PyThreadState *tstate)
 
     _Py_EnsureTstateNotNULL(tstate);
     _PyThreadState_Attach(tstate);
+    tstate->scheduler_state = SCHEDULER_STATE_RUNNABLE;
 
 #ifdef MS_WINDOWS
     SetLastError(err);

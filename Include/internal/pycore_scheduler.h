@@ -10,6 +10,9 @@ extern "C" {
 
 #include "pytypedefs.h" // PyInterpreterState, PyObject
 
+#define SCHEDULER_STATE_RUNNABLE 0
+#define SCHEDULER_STATE_BLOCKED 1
+
 typedef struct {
     /* Backward reference to interpreter state */
     PyInterpreterState* interp;
