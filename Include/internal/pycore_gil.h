@@ -17,7 +17,7 @@ extern "C" {
 /* Enable if you want to force the switching of threads at least
    every `interval`. */
 #undef FORCE_SWITCHING
-#define FORCE_SWITCHING
+// #define FORCE_SWITCHING
 
 struct _gil_runtime_state {
 #ifdef Py_GIL_DISABLED
