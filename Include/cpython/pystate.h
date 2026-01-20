@@ -2,6 +2,7 @@
 #  error "this header file must not be included directly"
 #endif
 
+struct PyEvent;
 
 /* private interpreter helpers */
 
@@ -211,6 +212,9 @@ struct _ts {
 
     /* Indicates whether this thread is runnable by the scheduler, see pycore_scheduler.h */
     int scheduler_state;
+
+    /* Indicates the event this thread is waiting on. */
+    struct PyEvent* waiting_event;
 };
 
 /* other API */

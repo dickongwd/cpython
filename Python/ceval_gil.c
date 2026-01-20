@@ -210,6 +210,9 @@ drop_gil_impl(PyThreadState *tstate, struct _gil_runtime_state *gil)
         tstate->holds_gil = 0;
     }
     COND_SIGNAL(gil->cond);
+#ifdef Py_DEBUG
+    fprintf(stderr, "[Thread %lld] I have dropped the GIL\n", PyThreadState_GetID(tstate));
+#endif
     MUTEX_UNLOCK(gil->mutex);
 }
 
@@ -246,6 +249,8 @@ drop_gil(PyInterpreterState *interp, PyThreadState *tstate, int final_release)
            holder variable so that our heuristics work. */
         _Py_atomic_store_ptr_relaxed(&gil->last_holder, tstate);
     }
+
+    _PyScheduler_SetNext(&interp->scheduler);
 
     drop_gil_impl(tstate, gil);
 
@@ -321,8 +326,43 @@ take_gil(PyThreadState *tstate)
 
     MUTEX_LOCK(gil->mutex);
 
+#ifdef Py_DEBUG
+    fprintf(stderr, "[Thread %lld] I am trying to acquire the GIL\n", PyThreadState_GetID(tstate), interp->threads.count);
+#endif
+
     int drop_requested = 0;
-    while (_Py_atomic_load_int_relaxed(&gil->locked)) {
+    while (true) {
+        int locked = _Py_atomic_load_int_relaxed(&gil->locked);
+        PyThreadState* next = _Py_atomic_load_ptr(&tstate->interp->scheduler.next);
+
+#ifdef Py_DEBUG
+        if (next != NULL) {
+            fprintf(stderr, "GIL locked is %d, i am %lld, next is %lld\n", locked, PyThreadState_GetID(tstate), PyThreadState_GetID(next));
+        }
+#endif
+
+        if (!locked) {
+            if (next == NULL) {
+                // Just let anyone through
+                // Should only happen on startup when the main thread is the only candidate
+                break;
+            }
+            
+            if (tstate == next) {
+#ifdef Py_DEBUG
+                fprintf(stderr, "[Thread %lld] I was allowed through!\n", PyThreadState_GetID(tstate));
+#endif
+                break;
+            } else {
+#ifdef Py_DEBUG
+                fprintf(stderr, "[Thread %lld] Next is %lld\n", PyThreadState_GetID(tstate), PyThreadState_GetID(next));
+#endif
+                // Is sleep here best?
+                sleep(1);
+                continue;
+            }
+        }
+
         unsigned long saved_switchnum = gil->switch_number;
 
         unsigned long interval = _Py_atomic_load_ulong_relaxed(&gil->interval);
@@ -415,7 +455,7 @@ take_gil(PyThreadState *tstate)
     MUTEX_UNLOCK(gil->mutex);
 
 #ifdef Py_DEBUG
-    fprintf(stderr, "Random number: %d\n", _PyScheduler_GetNext(&interp->scheduler));
+    fprintf(stderr, "[Thread %lld] I acquired the GIL, interpreter thread count is %lld\n", PyThreadState_GetID(tstate), interp->threads.count);
 #endif
 
     errno = err;
@@ -644,7 +684,6 @@ PyThreadState *
 PyEval_SaveThread(void)
 {
     PyThreadState *tstate = _PyThreadState_GET();
-    tstate->scheduler_state = SCHEDULER_STATE_BLOCKED;
     _PyThreadState_Detach(tstate);
     return tstate;
 }
@@ -658,7 +697,6 @@ PyEval_RestoreThread(PyThreadState *tstate)
 
     _Py_EnsureTstateNotNULL(tstate);
     _PyThreadState_Attach(tstate);
-    tstate->scheduler_state = SCHEDULER_STATE_RUNNABLE;
 
 #ifdef MS_WINDOWS
     SetLastError(err);
@@ -1414,6 +1452,9 @@ _Py_HandlePending(PyThreadState *tstate)
 
     /* GIL drop request */
     if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
+#ifdef Py_DEBUG
+        fprintf(stderr, "[Thread %lld] Thread yielding from drop request\n", PyThreadState_GetID(tstate));
+#endif
         /* Give another thread a chance */
         _PyThreadState_Detach(tstate);
 

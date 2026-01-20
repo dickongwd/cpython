@@ -1,7 +1,7 @@
 import threading
 
 thread_count = 8 
-n_count = 1_000_000
+n_count = 10_000_000
 
 count = [0 for _ in range(thread_count)]
 

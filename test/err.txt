@@ -1,0 +1,3120 @@
+[Thread 1] I am trying to acquire the GIL
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] I have dropped the GIL
+[Thread 1] I am trying to acquire the GIL
+GIL locked is 0, i am 1, next is 1
+[Thread 1] I was allowed through!
+[Thread 1] I acquired the GIL, interpreter thread count is 0
+[Thread 1] calling thread_PyThread_start_joinable_thread
+in ThreadHandle_start, by thread 1
+GIL locked: 1
+in ThreadHandle_start, by thread 1
+GIL locked: 1
+start new thread looks like it finished
+pythread start joinable thread looks like it finished
+[Thread 1] I have dropped the GIL
+[Thread 2] I am trying to acquire the GIL
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
+GIL locked is 0, i am 2, next is 1
+[Thread 2] Next is 1
