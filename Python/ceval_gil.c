@@ -327,7 +327,7 @@ take_gil(PyThreadState *tstate)
     MUTEX_LOCK(gil->mutex);
 
 #ifdef Py_DEBUG
-    fprintf(stderr, "[Thread %lld] I am trying to acquire the GIL\n", PyThreadState_GetID(tstate), interp->threads.count);
+    fprintf(stderr, "[Thread %lld] I am trying to acquire the GIL\n", PyThreadState_GetID(tstate));
 #endif
 
     int drop_requested = 0;
@@ -357,8 +357,12 @@ take_gil(PyThreadState *tstate)
 #ifdef Py_DEBUG
                 fprintf(stderr, "[Thread %lld] Next is %lld\n", PyThreadState_GetID(tstate), PyThreadState_GetID(next));
 #endif
-                // Is sleep here best?
-                sleep(1);
+                unsigned long interval = _Py_atomic_load_ulong_relaxed(&gil->interval);
+                if (interval < 1) {
+                    interval = 1;
+                }
+                int timed_out = 0;
+                COND_TIMED_WAIT(gil->cond, gil->mutex, 1000000, timed_out);
                 continue;
             }
         }

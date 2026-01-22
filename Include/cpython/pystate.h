@@ -2,8 +2,6 @@
 #  error "this header file must not be included directly"
 #endif
 
-struct PyEvent;
-
 /* private interpreter helpers */
 
 PyAPI_FUNC(int) _PyInterpreterState_RequiresIDRef(PyInterpreterState *);
@@ -214,7 +212,7 @@ struct _ts {
     int scheduler_state;
 
     /* Indicates the event this thread is waiting on. */
-    struct PyEvent* waiting_event;
+    uintptr_t waiting_event;
 };
 
 /* other API */

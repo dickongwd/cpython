@@ -11,8 +11,8 @@ extern "C" {
 #include "pytypedefs.h"
 
 #define SCHEDULER_STATE_RUNNABLE 0
-#define SCHEDULER_STATE_BLOCKED 1
-#define SCHEDULER_STATE_BLOCKED_SYNC 2
+#define SCHEDULER_STATE_BLOCKED_THREAD_JOIN 1
+#define SCHEDULER_STATE_BLOCKED_MUTEX_LOCK 2
 
 typedef struct {
     /* Points to the next thread to schedule. 
@@ -36,7 +36,7 @@ typedef struct {
 extern void _PyScheduler_Init(_PyScheduler* scheduler, PyInterpreterState* interp);
 extern void _PyScheduler_SetNext(_PyScheduler* scheduler);
 
-extern void _PyScheduler_Notify(_PyScheduler* scheduler, PyEvent* event);
+extern void _PyScheduler_Notify(_PyScheduler* scheduler, uintptr_t event);
 
 
 #ifdef __cplusplus

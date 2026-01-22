@@ -1603,7 +1603,7 @@ init_threadstate(_PyThreadStateImpl *_tstate,
     }
 
     tstate->scheduler_state = SCHEDULER_STATE_RUNNABLE;
-    tstate->waiting_event = NULL;
+    tstate->waiting_event = 0;
 
     tstate->_status.initialized = 1;
 }

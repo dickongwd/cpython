@@ -62,6 +62,12 @@ _PyMutex_LockTimed(PyMutex *m, PyTime_t timeout, _PyLockFlags flags)
         return PY_LOCK_FAILURE;
     }
 
+    PyThreadState* ts = PyThreadState_Get();
+    ts->scheduler_state = SCHEDULER_STATE_BLOCKED_MUTEX_LOCK;
+    ts->waiting_event = (uintptr_t)m;
+    _PyScheduler_SetNext(&ts->interp->scheduler);
+
+
     PyTime_t now;
     // silently ignore error: cannot report error to the caller
     (void)PyTime_MonotonicRaw(&now);
@@ -162,6 +168,9 @@ mutex_unpark(void *arg, void *park_arg, int has_more_waiters)
 int
 _PyMutex_TryUnlock(PyMutex *m)
 {
+    PyInterpreterState* interp = PyInterpreterState_Get();
+    _PyScheduler_Notify(&interp->scheduler, (uintptr_t)m);
+
     uint8_t v = _Py_atomic_load_uint8(&m->_bits);
     for (;;) {
         if ((v & _Py_LOCKED) == 0) {

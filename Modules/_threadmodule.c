@@ -371,14 +371,12 @@ thread_run(void *boot_raw)
     }
 
     // Notify before GIL is released
-    _PyScheduler_Notify(&tstate->interp->scheduler, &handle->thread_is_exiting);
+    _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)&handle->thread_is_exiting);
 
     thread_bootstate_free(boot, 1);
 
     _Py_atomic_add_ssize(&tstate->interp->threads.count, -1);
     PyThreadState_Clear(tstate);
-
-
 
     // GIL is released here
     _PyThreadState_DeleteCurrent(tstate);
@@ -545,8 +543,9 @@ ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
     }
 
     PyThreadState* ts = PyThreadState_GET();
-    ts->scheduler_state = SCHEDULER_STATE_BLOCKED_SYNC;
-    ts->waiting_event = &self->thread_is_exiting;
+    ts->scheduler_state = SCHEDULER_STATE_BLOCKED_THREAD_JOIN;
+    ts->waiting_event = (uintptr_t)&self->thread_is_exiting;
+    _PyScheduler_SetNext(&ts->interp->scheduler);
 
     // Wait until the deadline for the thread to exit.
     PyTime_t deadline = timeout_ns != -1 ? _PyDeadline_Init(timeout_ns) : 0;
