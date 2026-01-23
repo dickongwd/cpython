@@ -542,10 +542,8 @@ ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
         }
     }
 
-    PyThreadState* ts = PyThreadState_GET();
-    ts->scheduler_state = SCHEDULER_STATE_BLOCKED_THREAD_JOIN;
-    ts->waiting_event = (uintptr_t)&self->thread_is_exiting;
-    _PyScheduler_SetNext(&ts->interp->scheduler);
+    PyThreadState* ts = PyThreadState_Get();
+    _PyScheduler_SetWaitingEvent(&ts->interp->scheduler, ts, (uintptr_t)&self->thread_is_exiting, SCHEDULER_STATE_BLOCKED_THREAD_JOIN);
 
     // Wait until the deadline for the thread to exit.
     PyTime_t deadline = timeout_ns != -1 ? _PyDeadline_Init(timeout_ns) : 0;
@@ -2364,6 +2362,7 @@ Return True if the current interpreter is the main Python interpreter.");
 static PyObject *
 thread_shutdown(PyObject *self, PyObject *args)
 {
+    fprintf(stderr, "[???] thread_shutdown called\n");
     PyThread_ident_t ident = PyThread_get_thread_ident_ex();
     thread_module_state *state = get_thread_state(self);
 

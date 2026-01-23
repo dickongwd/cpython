@@ -659,7 +659,7 @@ init_interpreter(PyInterpreterState *interp,
     _PyGC_InitState(&interp->gc);
     PyConfig_InitPythonConfig(&interp->config);
     _PyType_InitCache(interp);
-    _PyScheduler_Init(&interp->scheduler, interp);
+    _PyScheduler_Init(&interp->scheduler, interp, 1234);
 #ifdef Py_GIL_DISABLED
     _Py_brc_init_state(interp);
 #endif

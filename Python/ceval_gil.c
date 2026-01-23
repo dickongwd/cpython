@@ -250,6 +250,9 @@ drop_gil(PyInterpreterState *interp, PyThreadState *tstate, int final_release)
         _Py_atomic_store_ptr_relaxed(&gil->last_holder, tstate);
     }
 
+#ifdef Py_DEBUG
+    fprintf(stderr, "[Thread %lld] GIL about to be dropped, invoking scheduler to select next thread\n", PyThreadState_GetID(tstate));
+#endif
     _PyScheduler_SetNext(&interp->scheduler);
 
     drop_gil_impl(tstate, gil);
@@ -343,8 +346,9 @@ take_gil(PyThreadState *tstate)
 
         if (!locked) {
             if (next == NULL) {
-                // Just let anyone through
-                // Should only happen on startup when the main thread is the only candidate
+#ifdef Py_DEBUG
+                fprintf(stderr, "[Thread %lld] Unexpected that no one is chosen as next thread\n", PyThreadState_GetID(tstate));
+#endif
                 break;
             }
             
@@ -355,7 +359,7 @@ take_gil(PyThreadState *tstate)
                 break;
             } else {
 #ifdef Py_DEBUG
-                fprintf(stderr, "[Thread %lld] Next is %lld\n", PyThreadState_GetID(tstate), PyThreadState_GetID(next));
+                fprintf(stderr, "[Thread %lld] Next is %lld, with state %d\n", PyThreadState_GetID(tstate), PyThreadState_GetID(next), next->scheduler_state);
 #endif
                 unsigned long interval = _Py_atomic_load_ulong_relaxed(&gil->interval);
                 if (interval < 1) {
@@ -374,7 +378,7 @@ take_gil(PyThreadState *tstate)
             interval = 1;
         }
         int timed_out = 0;
-        COND_TIMED_WAIT(gil->cond, gil->mutex, interval, timed_out);
+        COND_TIMED_WAIT(gil->cond, gil->mutex, 1000000, timed_out);
 
         /* If we timed out and no switch occurred in the meantime, it is time
            to ask the GIL-holding thread to drop it. */
@@ -459,7 +463,7 @@ take_gil(PyThreadState *tstate)
     MUTEX_UNLOCK(gil->mutex);
 
 #ifdef Py_DEBUG
-    fprintf(stderr, "[Thread %lld] I acquired the GIL, interpreter thread count is %lld\n", PyThreadState_GetID(tstate), interp->threads.count);
+    fprintf(stderr, "[Thread %lld] I have acquired the GIL\n", PyThreadState_GetID(tstate));
 #endif
 
     errno = err;
@@ -1409,6 +1413,7 @@ _Py_HandlePending(PyThreadState *tstate)
 
     /* Stop-the-world */
     if ((breaker & _PY_EVAL_PLEASE_STOP_BIT) != 0) {
+        fprintf(stderr, "STOP THE WORLD\n");
         _Py_unset_eval_breaker_bit(tstate, _PY_EVAL_PLEASE_STOP_BIT);
         _PyThreadState_Suspend(tstate);
 
@@ -1455,9 +1460,11 @@ _Py_HandlePending(PyThreadState *tstate)
     }
 
     /* GIL drop request */
-    if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
+    // if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
+    PyThreadState* next = _Py_atomic_load_ptr(&tstate->interp->scheduler.next);
+    if (tstate != next) {
 #ifdef Py_DEBUG
-        fprintf(stderr, "[Thread %lld] Thread yielding from drop request\n", PyThreadState_GetID(tstate));
+        fprintf(stderr, "[Thread %lld] Yielding voluntarily in periodic check\n", PyThreadState_GetID(tstate));
 #endif
         /* Give another thread a chance */
         _PyThreadState_Detach(tstate);

@@ -1,7 +1,8 @@
+import time
 import threading
 
-thread_count = 8 
-n_count = 10_000_000
+thread_count = 4
+n_count = 10
 
 count = [0 for _ in range(thread_count)]
 
@@ -9,6 +10,7 @@ def inc(thread_id):
     global count
     for _ in range(n_count):
         count[thread_id] += 1
+        time.sleep(1)
     print(f"Count: {count}")
 
 threads = []
