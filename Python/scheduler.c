@@ -91,27 +91,21 @@ void _PyScheduler_SetNext(_PyScheduler* scheduler) {
     unsigned int raw = genrand_uint32(&scheduler->random_obj);
     int rng = raw % 10;
     int num = rng;
-#ifdef Py_DEBUG
-    fprintf(stderr, "[RNG] Raw: %u\n", raw);
-    fprintf(stderr, "[RNG] Num: %u\n", num);
-#endif
     PyThreadState* ts = NULL;
 
     HEAD_LOCK(&_PyRuntime);
 
-    while (num >= 0) {
-        // Main thread
-        ts = interp->runtime->main_tstate;
-        if (ts->scheduler_state == SCHEDULER_STATE_RUNNABLE) {
-            if (num == 0) {
 #ifdef Py_DEBUG
-                fprintf(stderr, "[Scheduler] Thread %lld is chosen as next thread\n", PyThreadState_GetID(ts));
-#endif
-                _Py_atomic_store_ptr(&scheduler->next, ts);
-            }
-            num--;
-        }
 
+    fprintf(stderr, "[Scheduler] [");
+    for (ts = PyInterpreterState_ThreadHead(interp); ts != NULL; ts = PyThreadState_Next(ts)) {
+        fprintf(stderr, "(%lld, %d), ", PyThreadState_GetID(ts), ts->scheduler_state);
+    }
+    fprintf(stderr, "]\n");
+
+#endif
+
+    while (num >= 0) {
         for (ts = PyInterpreterState_ThreadHead(interp); ts != NULL && num >= 0; ts = PyThreadState_Next(ts)) {
             if (ts->scheduler_state == SCHEDULER_STATE_RUNNABLE) {
                 if (num == 0) {
@@ -139,7 +133,7 @@ void _PyScheduler_SetNext(_PyScheduler* scheduler) {
 
 /* Iterates through all threads and sets thread states which are waiting
    on the specified event (addr) to be runnable.
-   Has to called with the GIL held. 
+   Has to be called with the GIL held. 
    This could probably be more efficient than scanning through all threads. */
 void _PyScheduler_Notify(_PyScheduler* scheduler, uintptr_t addr) {
 #ifdef Py_DEBUG
@@ -152,25 +146,17 @@ void _PyScheduler_Notify(_PyScheduler* scheduler, uintptr_t addr) {
     HEAD_LOCK(&_PyRuntime);
 
     // Main thread
-    PyThreadState* ts = interp->runtime->main_tstate;
-    if (ts->waiting_event == addr) {
-#ifdef Py_DEBUG
-        fprintf(stderr, "[Thread %lld]", PyThreadState_GetID(PyThreadState_Get()));
-        fprintf(stderr, "[Scheduler] Notified thread %lld and made it ready\n", PyThreadState_GetID(ts));
-#endif
-        ts->scheduler_state = SCHEDULER_STATE_RUNNABLE;
-        ts->waiting_event = 0;
-    }
+    PyThreadState* ts = NULL;
 
     // All other threads in interpreter
     for (ts = PyInterpreterState_ThreadHead(interp); ts != NULL; ts = PyThreadState_Next(ts)) {
-        if (ts->waiting_event == addr) {
+        if (ts->wait_entry == addr) {
 #ifdef Py_DEBUG
             fprintf(stderr, "[Thread %lld]", PyThreadState_GetID(PyThreadState_Get()));
             fprintf(stderr, "[Scheduler] Notified thread %lld and made it ready\n", PyThreadState_GetID(ts));
 #endif
             ts->scheduler_state = SCHEDULER_STATE_RUNNABLE;
-            ts->waiting_event = 0;
+            ts->wait_entry = 0;
         }
     }
 
@@ -184,9 +170,11 @@ void _PyScheduler_SetWaitingEvent(_PyScheduler* scheduler, PyThreadState* ts, ui
     fprintf(stderr, "[Thread %lld]", PyThreadState_GetID(PyThreadState_Get()));
     fprintf(stderr, "[Scheduler] State set to %d\n", new_state);
 #endif
-    ts->scheduler_state = new_state;
-    ts->waiting_event = event;
+    if (ts->scheduler_state == SCHEDULER_STATE_RUNNABLE) {
+        ts->scheduler_state = new_state;
+        ts->wait_entry = event;
 
-    // Reset the next thread since a thread's state has changed
-    _PyScheduler_SetNext(scheduler);
+        // Reset the next thread since a thread's state has changed
+        _PyScheduler_SetNext(scheduler);
+    }
 }

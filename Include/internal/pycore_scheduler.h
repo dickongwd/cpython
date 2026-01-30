@@ -9,10 +9,34 @@ extern "C" {
 #endif
 
 #include "pytypedefs.h"
+#include "pycore_pystate.h"
 
 #define SCHEDULER_STATE_RUNNABLE 0
 #define SCHEDULER_STATE_BLOCKED_THREAD_JOIN 1
 #define SCHEDULER_STATE_BLOCKED_MUTEX_LOCK 2
+#define SCHEDULER_STATE_BLOCKED_ALLOW_THREADS 3
+
+#define _PyScheduler_BEGIN_ALLOW_THREADS(event, state) \
+    { \
+        PyThreadState* tstate = _PyThreadState_GET(); \
+        assert(tstate != NULL); \
+        assert(_PyThreadState_IsAttached(tstate) != 0); \
+        _PyScheduler_SetWaitingEvent(&tstate->interp->scheduler, tstate, (uintptr_t)event, state); \
+    } \
+    Py_BEGIN_ALLOW_THREADS 
+
+#define _PyScheduler_END_ALLOW_THREADS(event) \
+    Py_END_ALLOW_THREADS \
+    { \
+        PyThreadState* tstate = _PyThreadState_GET(); \
+        assert(tstate != NULL); \
+        assert(_PyThreadState_IsAttached(tstate) != 0); \
+        tstate->scheduler_state = 1; \
+        tstate->wait_entry = 0; \
+        /* Notify again for non-blocking operations */ \
+        /* TODO only set myself */ \
+        /* _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)event); */ \
+    } \
 
 /* Copied/referenced over from _randommodule.c */
 typedef struct {
@@ -32,9 +56,6 @@ typedef struct {
     _PyScheduler_RandomObject random_obj;
 
     int initialized;
-
-    // PyObject* random_module;
-    // PyObject* random_instance;
 } _PyScheduler;
 
 extern void _PyScheduler_Init(_PyScheduler* scheduler, PyInterpreterState* interp, uint32_t seed);

@@ -1413,7 +1413,6 @@ _Py_HandlePending(PyThreadState *tstate)
 
     /* Stop-the-world */
     if ((breaker & _PY_EVAL_PLEASE_STOP_BIT) != 0) {
-        fprintf(stderr, "STOP THE WORLD\n");
         _Py_unset_eval_breaker_bit(tstate, _PY_EVAL_PLEASE_STOP_BIT);
         _PyThreadState_Suspend(tstate);
 

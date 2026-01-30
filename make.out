@@ -1,0 +1,6 @@
+The necessary bits to build these optional modules were not found:
+_gdbm                                                          
+To find the necessary bits, look in configure.ac and config.log.
+
+Checked 114 modules (36 built-in, 77 shared, 0 n/a on macosx-15.6-arm64, 0 disabled, 1 missing, 0 failed on import)
+./python.exe -E ./Tools/build/generate-build-details.py `cat pybuilddir.txt`/build-details.json

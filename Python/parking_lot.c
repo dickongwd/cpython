@@ -232,10 +232,19 @@ _PySemaphore_Wait(_PySemaphore *sema, PyTime_t timeout, int detach)
     if (detach) {
         tstate = _PyThreadState_GET();
         if (tstate && _PyThreadState_IsAttached(tstate)) {
+
+            /* Scheduler instrumentation */
+            // TODO if there is a timeout, wait for it and dont change state, and reset state if
+            // timed out
+            _PyScheduler_SetWaitingEvent(&tstate->interp->scheduler, tstate, (uintptr_t)sema, SCHEDULER_STATE_BLOCKED_MUTEX_LOCK);
+
             // Only detach if we are attached
             PyEval_ReleaseThread(tstate);
         }
         else {
+#ifdef Py_DEBUG
+            fprintf(stderr, "_PySemaphore_Wait called without GIL, scheduler may not see state change\n");
+#endif
             tstate = NULL;
         }
     }
@@ -259,6 +268,18 @@ _PySemaphore_Wakeup(_PySemaphore *sema)
         Py_FatalError("parking_lot: sem_post failed");
     }
 #else
+
+    /* Scheduler instrumentation */
+    PyThreadState* tstate = _PyThreadState_GET();
+    if (tstate && _PyThreadState_IsAttached(tstate)) {
+        _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)sema);
+    }
+#ifdef Py_DEBUG
+    else {
+        fprintf(stderr, "_PySemaphore_Wakeup called without GIL, scheduler may not see state change\n");
+    }
+#endif
+
     pthread_mutex_lock(&sema->mutex);
     sema->counter++;
     pthread_cond_signal(&sema->cond);
@@ -325,6 +346,11 @@ int
 _PyParkingLot_Park(const void *addr, const void *expected, size_t size,
                    PyTime_t timeout_ns, void *park_arg, int detach)
 {
+    PyThreadState *tstate = _PyThreadState_GET();
+    if (tstate && _PyThreadState_IsAttached(tstate)) {
+        fprintf(stderr, "[Thread %lld] Called park\n", PyThreadState_GetID(tstate));
+    }
+
     struct wait_entry wait = {
         .park_arg = park_arg,
         .addr = (uintptr_t)addr,

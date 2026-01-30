@@ -699,6 +699,7 @@ class Barrier:
         default for all subsequent 'wait()' calls.
 
         """
+        print("init barrier", flush=True)
         if parties < 1:
             raise ValueError("parties must be >= 1")
         self._cond = Condition(Lock())
@@ -724,10 +725,14 @@ class Barrier:
         Returns an individual index number from 0 to 'parties-1'.
 
         """
+        print("wait()", flush=True)
         if timeout is None:
             timeout = self._timeout
         with self._cond:
+            print("Entering barrier", flush=True)
+            print("State, ", self._state, flush=True)
             self._enter() # Block while the barrier drains.
+            print("After self._enter()", flush=True)
             index = self._count
             self._count += 1
             try:
@@ -736,6 +741,7 @@ class Barrier:
                     self._release()
                 else:
                     # We wait until someone releases us
+                    print("About to wait()", flush=True)
                     self._wait(timeout)
                 return index
             finally:

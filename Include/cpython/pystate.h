@@ -211,8 +211,8 @@ struct _ts {
     /* Indicates whether this thread is runnable by the scheduler, see pycore_scheduler.h */
     int scheduler_state;
 
-    /* Indicates the event this thread is waiting on. */
-    uintptr_t waiting_event;
+    /* Indicates the entry this thread is waiting on. */
+    uintptr_t wait_entry;
 };
 
 /* other API */

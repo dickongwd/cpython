@@ -370,6 +370,11 @@ thread_run(void *boot_raw)
         Py_DECREF(res);
     }
 
+#ifdef Py_DEBUG
+    fprintf(stderr, "[Thread %lld]", PyThreadState_GetID(PyThreadState_Get()));
+    fprintf(stderr, "Finishing thread\n");
+#endif
+
     // Notify before GIL is released
     _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)&handle->thread_is_exiting);
 
@@ -466,9 +471,6 @@ ThreadHandle_start(ThreadHandle *self, PyObject *func, PyObject *args,
 
     // Unblock the thread
     _PyEvent_Notify(&boot->handle_ready);
-    PyThreadState* ts = PyThreadState_GET();
-    fprintf(stderr, "in ThreadHandle_start, by thread %lld\n", PyThreadState_GetID(ts));
-    fprintf(stderr, "GIL locked: %d\n", _Py_atomic_load_int_relaxed(&ts->interp->ceval.gil->locked));
 
     return 0;
 
@@ -542,8 +544,8 @@ ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
         }
     }
 
-    PyThreadState* ts = PyThreadState_Get();
-    _PyScheduler_SetWaitingEvent(&ts->interp->scheduler, ts, (uintptr_t)&self->thread_is_exiting, SCHEDULER_STATE_BLOCKED_THREAD_JOIN);
+    PyThreadState* tstate = PyThreadState_Get();
+    _PyScheduler_SetWaitingEvent(&tstate->interp->scheduler, tstate, (uintptr_t)&self->thread_is_exiting, SCHEDULER_STATE_BLOCKED_THREAD_JOIN);
 
     // Wait until the deadline for the thread to exit.
     PyTime_t deadline = timeout_ns != -1 ? _PyDeadline_Init(timeout_ns) : 0;
@@ -566,6 +568,11 @@ ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
             return 0;
         }
     }
+
+    // Notify again if thread has already finished before join
+    // _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)&self->thread_is_exiting);
+            tstate->scheduler_state = SCHEDULER_STATE_RUNNABLE;
+            tstate->wait_entry = 0;
 
     if (_PyOnceFlag_CallOnce(&self->once, join_thread, self) == -1) {
         return -1;
@@ -1880,8 +1887,6 @@ do_start_new_thread(thread_module_state *state, PyObject *func, PyObject *args,
         return -1;
     }
 
-    fprintf(stderr, "start new thread looks like it finished\n");
-
     return 0;
 }
 
@@ -1928,7 +1933,6 @@ thread_PyThread_start_new_thread(PyObject *module, PyObject *fargs)
     }
     PyThread_ident_t ident = ThreadHandle_ident(handle);
     ThreadHandle_decref(handle);
-    fprintf(stderr, "pythread start new thread looks like it finished\n");
     return PyLong_FromUnsignedLongLong(ident);
 }
 
@@ -1955,7 +1959,6 @@ static PyObject *
 thread_PyThread_start_joinable_thread(PyObject *module, PyObject *fargs,
                                       PyObject *fkwargs)
 {
-    fprintf(stderr, "[Thread %lld] calling thread_PyThread_start_joinable_thread\n", PyThreadState_GetID(PyThreadState_GET()));
     static char *keywords[] = {"function", "handle", "daemon", NULL};
     PyObject *func = NULL;
     int daemon = 1;
@@ -2007,7 +2010,6 @@ thread_PyThread_start_joinable_thread(PyObject *module, PyObject *fargs,
         Py_DECREF(hobj);
         return NULL;
     }
-    fprintf(stderr, "pythread start joinable thread looks like it finished\n");
     return (PyObject *) hobj;
 }
 
@@ -2362,7 +2364,6 @@ Return True if the current interpreter is the main Python interpreter.");
 static PyObject *
 thread_shutdown(PyObject *self, PyObject *args)
 {
-    fprintf(stderr, "[???] thread_shutdown called\n");
     PyThread_ident_t ident = PyThread_get_thread_ident_ex();
     thread_module_state *state = get_thread_state(self);
 

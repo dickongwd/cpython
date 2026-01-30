@@ -779,6 +779,18 @@ done:
 void
 PyThread_release_lock(PyThread_type_lock lock)
 {
+    /* Scheduler instrumentation */
+    PyThreadState* tstate = _PyThreadState_GET();
+    if (tstate && _PyThreadState_IsAttached(tstate)) {
+        fprintf(stderr, "[Thread %lld] PyThread notify release lock\n", PyThreadState_GetID(tstate));
+        _PyScheduler_Notify(&tstate->interp->scheduler, (uintptr_t)lock);
+    }
+#ifdef Py_DEBUG
+    else {
+        fprintf(stderr, "PyThread_release_lock called without GIL, scheduler may not see state change\n");
+    }
+#endif
+
     pthread_lock *thelock = (pthread_lock *)lock;
     int status, error = 0;
 

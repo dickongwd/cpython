@@ -1,0 +1,5 @@
+Count: [10, 8, 4, 2]
+Count: [10, 10, 5, 2]
+Count: [10, 10, 10, 8]
+Count: [10, 10, 10, 10]
+Final state of count = [10, 10, 10, 10]

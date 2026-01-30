@@ -659,7 +659,7 @@ init_interpreter(PyInterpreterState *interp,
     _PyGC_InitState(&interp->gc);
     PyConfig_InitPythonConfig(&interp->config);
     _PyType_InitCache(interp);
-    _PyScheduler_Init(&interp->scheduler, interp, 1234);
+    _PyScheduler_Init(&interp->scheduler, interp, 123);
 #ifdef Py_GIL_DISABLED
     _Py_brc_init_state(interp);
 #endif
@@ -1603,7 +1603,7 @@ init_threadstate(_PyThreadStateImpl *_tstate,
     }
 
     tstate->scheduler_state = SCHEDULER_STATE_RUNNABLE;
-    tstate->waiting_event = 0;
+    tstate->wait_entry = 0;
 
     tstate->_status.initialized = 1;
 }
@@ -2365,7 +2365,7 @@ park_detached_threads(struct _stoptheworld_state *stw)
 }
 
 static void
-stop_the_world(struct _stoptheworld_state *stw)
+STOP_THE_WORLD(struct _stoptheworld_state *stw)
 {
     _PyRuntimeState *runtime = &_PyRuntime;
 

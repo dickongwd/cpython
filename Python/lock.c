@@ -62,9 +62,6 @@ _PyMutex_LockTimed(PyMutex *m, PyTime_t timeout, _PyLockFlags flags)
         return PY_LOCK_FAILURE;
     }
 
-    PyThreadState* ts = PyThreadState_Get();
-    _PyScheduler_SetWaitingEvent(&ts->interp->scheduler, ts, (uintptr_t)m, SCHEDULER_STATE_BLOCKED_MUTEX_LOCK);
-
     PyTime_t now;
     // silently ignore error: cannot report error to the caller
     (void)PyTime_MonotonicRaw(&now);
@@ -172,9 +169,6 @@ _PyMutex_TryUnlock(PyMutex *m)
             return -1;
         }
         else if ((v & _Py_HAS_PARKED)) {
-            PyInterpreterState* interp = PyInterpreterState_Get();
-            _PyScheduler_Notify(&interp->scheduler, (uintptr_t)m);
-
             // wake up a single thread
             _PyParkingLot_Unpark(&m->_bits, mutex_unpark, m);
             return 0;
