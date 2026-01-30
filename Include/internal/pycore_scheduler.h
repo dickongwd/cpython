@@ -11,17 +11,26 @@ extern "C" {
 
 #include "pytypedefs.h"
 
+/* Copied/referenced over from _randommodule.c */
+typedef struct {
+    int index;
+    uint32_t state[624];
+} _PyScheduler_RandomObject;
+
 typedef struct {
 
     /* Points to the next thread state to schedule.
        Needs to be read from and written to atomically. */
     PyThreadState* next;
 
+    /* Used for rng */
+    _PyScheduler_RandomObject random_obj;
+
     int initialized;
 
 } _PyScheduler;
 
-extern void _PyScheduler_Init(_PyScheduler* scheduler);
+extern void _PyScheduler_Init(_PyScheduler* scheduler, uint32_t seed);
 
 #ifdef __cplusplus
 }
