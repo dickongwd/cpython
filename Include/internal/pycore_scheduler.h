@@ -26,6 +26,15 @@ typedef struct {
     /* Backward reference */
     PyInterpreterState* interp;
 
+    /* Number of threads.
+
+       interp->threads.count is not used as it is used by users of the threading module, and is
+       incremented in the new thread when some key operations have already taken place (e.g.
+       acquire GIL).
+
+       Protected by HEAD_LOCK(runtime). */
+    Py_ssize_t thread_count;
+
     /* Used for rng */
     _PyScheduler_RandomObject random_obj;
 
