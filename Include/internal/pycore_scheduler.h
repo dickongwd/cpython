@@ -23,6 +23,9 @@ typedef struct {
        Needs to be read from and written to atomically. */
     PyThreadState* next;
 
+    /* Backward reference */
+    PyInterpreterState* interp;
+
     /* Used for rng */
     _PyScheduler_RandomObject random_obj;
 
@@ -30,7 +33,7 @@ typedef struct {
 
 } _PyScheduler;
 
-extern void _PyScheduler_Init(_PyScheduler* scheduler, uint32_t seed);
+extern void _PyScheduler_Init(_PyScheduler* scheduler, PyInterpreterState* interp, uint32_t seed);
 
 #ifdef __cplusplus
 }

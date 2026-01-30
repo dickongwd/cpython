@@ -63,8 +63,9 @@ static uint32_t genrand_uint32(_PyScheduler_RandomObject *self) {
     return y;
 }
 
-void _PyScheduler_Init(_PyScheduler* scheduler, uint32_t seed) {
+void _PyScheduler_Init(_PyScheduler* scheduler, PyInterpreterState* interp, uint32_t seed) {
     scheduler->next = NULL;
+    scheduler->interp = interp;
     init_genrand(&scheduler->random_obj, seed);
     scheduler->initialized = 1;
 }
