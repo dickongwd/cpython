@@ -208,6 +208,9 @@ struct _ts {
     */
     PyObject *threading_local_sentinel;
     _PyRemoteDebuggerSupport remote_debugger_support;
+
+    /* Indicates whether this thread is runnable by the scheduler, see pycore_scheduler.h */
+    int scheduler_state;
 };
 
 /* other API */

@@ -1600,6 +1600,8 @@ init_threadstate(_PyThreadStateImpl *_tstate,
         tstate->state = _Py_THREAD_SUSPENDED;
     }
 
+    tstate->scheduler_state = _PyScheduler_STATE_RUNNABLE;
+
     tstate->_status.initialized = 1;
 }
 

@@ -11,6 +11,7 @@
 #include "pycore_pylifecycle.h"
 #include "pycore_pystate.h"       // _PyThreadState_SetCurrent()
 #include "pycore_sysmodule.h"     // _PySys_GetOptionalAttr()
+#include "threadhandle.h"
 #include "pycore_time.h"          // _PyTime_FromSeconds()
 #include "pycore_weakref.h"       // _PyWeakref_GET_REF()
 
@@ -77,51 +78,6 @@ typedef enum {
     THREAD_HANDLE_RUNNING = 3,
     THREAD_HANDLE_DONE = 4,
 } ThreadHandleState;
-
-// A handle to wait for thread completion.
-//
-// This may be used to wait for threads that were spawned by the threading
-// module as well as for the "main" thread of the threading module. In the
-// former case an OS thread, identified by the `os_handle` field, will be
-// associated with the handle. The handle "owns" this thread and ensures that
-// the thread is either joined or detached after the handle is destroyed.
-//
-// Joining the handle is idempotent; the underlying OS thread, if any, is
-// joined or detached only once. Concurrent join operations are serialized
-// until it is their turn to execute or an earlier operation completes
-// successfully. Once a join has completed successfully all future joins
-// complete immediately.
-//
-// This must be separately reference counted because it may be destroyed
-// in `thread_run()` after the PyThreadState has been destroyed.
-typedef struct {
-    struct llist_node node;  // linked list node (see _pythread_runtime_state)
-
-    // linked list node (see thread_module_state)
-    struct llist_node shutdown_node;
-
-    // The `ident`, `os_handle`, `has_os_handle`, and `state` fields are
-    // protected by `mutex`.
-    PyThread_ident_t ident;
-    PyThread_handle_t os_handle;
-    int has_os_handle;
-
-    // Holds a value from the `ThreadHandleState` enum.
-    int state;
-
-    PyMutex mutex;
-
-    // Set immediately before `thread_run` returns to indicate that the OS
-    // thread is about to exit. This is used to avoid false positives when
-    // detecting self-join attempts. See the comment in `ThreadHandle_join()`
-    // for a more detailed explanation.
-    PyEvent thread_is_exiting;
-
-    // Serializes calls to `join` and `set_done`.
-    _PyOnceFlag once;
-
-    Py_ssize_t refcount;
-} ThreadHandle;
 
 static inline int
 get_thread_handle_state(ThreadHandle *handle)
@@ -203,6 +159,7 @@ ThreadHandle_new(void)
     self->os_handle = 0;
     self->has_os_handle = 0;
     self->thread_is_exiting = (PyEvent){0};
+    self->has_exited = 0;
     self->mutex = (PyMutex){_Py_UNLOCKED};
     self->once = (_PyOnceFlag){0};
     self->state = THREAD_HANDLE_NOT_STARTED;
@@ -370,6 +327,8 @@ thread_run(void *boot_raw)
         Py_DECREF(res);
     }
 
+    _PyScheduler_Instrument_AfterThreadFinish(&tstate->interp->scheduler, handle);
+
     thread_bootstate_free(boot, 1);
 
     _Py_atomic_add_ssize(&tstate->interp->threads.count, -1);
@@ -462,6 +421,8 @@ ThreadHandle_start(ThreadHandle *self, PyObject *func, PyObject *args,
     // Unblock the thread
     _PyEvent_Notify(&boot->handle_ready);
 
+    _PyScheduler_Instrument_AfterThreadStart(&interp->scheduler);
+
     return 0;
 
 start_failed:
@@ -503,6 +464,9 @@ check_started(ThreadHandle *self)
 static int
 ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
 {
+    PyThreadState* tstate = _PyThreadState_GET();
+    _PyScheduler_Instrument_BeforeThreadJoin(&tstate->interp->scheduler, self);
+
     if (check_started(self) < 0) {
         return -1;
     }
