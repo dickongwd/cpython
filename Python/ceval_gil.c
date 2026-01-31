@@ -1406,14 +1406,14 @@ _Py_HandlePending(PyThreadState *tstate)
     }
 
     /* GIL drop request */
-    if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
+    // if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
         /* Give another thread a chance */
         _PyThreadState_Detach(tstate);
 
         /* Other threads may run now */
 
         _PyThreadState_Attach(tstate);
-    }
+    // }
 
     /* Check for asynchronous exception. */
     if ((breaker & _PY_ASYNC_EXCEPTION_BIT) != 0) {
