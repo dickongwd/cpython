@@ -1653,10 +1653,6 @@ new_threadstate(PyInterpreterState *interp, int whence)
     PyThreadState *old_head = interp->threads.head;
     add_threadstate(interp, (PyThreadState *)tstate, old_head);
 
-    if (whence == _PyThreadState_WHENCE_THREADING) {
-        _Py_atomic_add_ssize(&interp->scheduler.thread_count, 1);
-    }
-
     HEAD_UNLOCK(interp->runtime);
 
 #ifdef Py_GIL_DISABLED

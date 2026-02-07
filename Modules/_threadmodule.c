@@ -10,8 +10,8 @@
 #include "pycore_object_deferred.h" // _PyObject_SetDeferredRefcount()
 #include "pycore_pylifecycle.h"
 #include "pycore_pystate.h"       // _PyThreadState_SetCurrent()
+#include "pycore_scheduler.h"
 #include "pycore_sysmodule.h"     // _PySys_GetOptionalAttr()
-#include "threadhandle.h"
 #include "pycore_time.h"          // _PyTime_FromSeconds()
 #include "pycore_weakref.h"       // _PyWeakref_GET_REF()
 
@@ -78,6 +78,55 @@ typedef enum {
     THREAD_HANDLE_RUNNING = 3,
     THREAD_HANDLE_DONE = 4,
 } ThreadHandleState;
+
+// A handle to wait for thread completion.
+//
+// This may be used to wait for threads that were spawned by the threading
+// module as well as for the "main" thread of the threading module. In the
+// former case an OS thread, identified by the `os_handle` field, will be
+// associated with the handle. The handle "owns" this thread and ensures that
+// the thread is either joined or detached after the handle is destroyed.
+//
+// Joining the handle is idempotent; the underlying OS thread, if any, is
+// joined or detached only once. Concurrent join operations are serialized
+// until it is their turn to execute or an earlier operation completes
+// successfully. Once a join has completed successfully all future joins
+// complete immediately.
+//
+// This must be separately reference counted because it may be destroyed
+// in `thread_run()` after the PyThreadState has been destroyed.
+typedef struct {
+    struct llist_node node;  // linked list node (see _pythread_runtime_state)
+
+    // linked list node (see thread_module_state)
+    struct llist_node shutdown_node;
+
+    // The `ident`, `os_handle`, `has_os_handle`, and `state` fields are
+    // protected by `mutex`.
+    PyThread_ident_t ident;
+    PyThread_handle_t os_handle;
+    int has_os_handle;
+
+    // Holds a value from the `ThreadHandleState` enum.
+    int state;
+
+    PyMutex mutex;
+
+    // Set immediately before `thread_run` returns to indicate that the OS
+    // thread is about to exit. This is used to avoid false positives when
+    // detecting self-join attempts. See the comment in `ThreadHandle_join()`
+    // for a more detailed explanation.
+    PyEvent thread_is_exiting;
+
+    // Serializes calls to `join` and `set_done`.
+    _PyOnceFlag once;
+
+    Py_ssize_t refcount;
+
+    // Similar to `thread_is_exiting`, but used for the scheduler. This separate event is created
+    // Because the `thread_is_exiting` event can be notified without the GIL.
+    _PyScheduler_ThreadHandle scheduler_threadhandle;
+} ThreadHandle;
 
 static inline int
 get_thread_handle_state(ThreadHandle *handle)
@@ -159,7 +208,9 @@ ThreadHandle_new(void)
     self->os_handle = 0;
     self->has_os_handle = 0;
     self->thread_is_exiting = (PyEvent){0};
-    self->has_exited = 0;
+    self->scheduler_threadhandle = (_PyScheduler_ThreadHandle){
+        .exited = 0
+    };
     self->mutex = (PyMutex){_Py_UNLOCKED};
     self->once = (_PyOnceFlag){0};
     self->state = THREAD_HANDLE_NOT_STARTED;
@@ -327,7 +378,7 @@ thread_run(void *boot_raw)
         Py_DECREF(res);
     }
 
-    _PyScheduler_Instrument_AfterThreadFinish(&tstate->interp->scheduler, handle);
+    _PyScheduler_ThreadExit(&tstate->interp->scheduler, &handle->scheduler_threadhandle);
 
     thread_bootstate_free(boot, 1);
 
@@ -362,6 +413,11 @@ static int
 ThreadHandle_start(ThreadHandle *self, PyObject *func, PyObject *args,
                    PyObject *kwargs)
 {
+#ifdef Py_DEBUG
+    PyThreadState* tstate = PyThreadState_Get();
+    fprintf(stderr, "[_threadmodule.c] Thread %llu ThreadHandle_start\n", PyThreadState_GetID(tstate));
+#endif
+
     // Mark the handle as starting to prevent any other threads from doing so
     PyMutex_Lock(&self->mutex);
     if (self->state != THREAD_HANDLE_NOT_STARTED) {
@@ -421,7 +477,7 @@ ThreadHandle_start(ThreadHandle *self, PyObject *func, PyObject *args,
     // Unblock the thread
     _PyEvent_Notify(&boot->handle_ready);
 
-    _PyScheduler_Instrument_AfterThreadStart(&interp->scheduler);
+    _PyScheduler_ThreadStart(&interp->scheduler);
 
     return 0;
 
@@ -463,9 +519,14 @@ check_started(ThreadHandle *self)
 
 static int
 ThreadHandle_join(ThreadHandle *self, PyTime_t timeout_ns)
-{
-    PyThreadState* tstate = _PyThreadState_GET();
-    _PyScheduler_Instrument_BeforeThreadJoin(&tstate->interp->scheduler, self);
+{ 
+    PyThreadState* tstate = PyThreadState_Get();
+
+#ifdef Py_DEBUG
+    fprintf(stderr, "[_threadmodule.c] Thread %llu ThreadHandle_join\n", PyThreadState_GetID(tstate));
+#endif
+
+    _PyScheduler_ThreadJoin(&tstate->interp->scheduler, &self->scheduler_threadhandle);
 
     if (check_started(self) < 0) {
         return -1;
@@ -709,6 +770,8 @@ static PyType_Spec ThreadHandle_Type_spec = {
 typedef struct {
     PyObject_HEAD
     PyMutex lock;
+    /* For use in scheduler */
+    _PyScheduler_lockobject scheduler_lock;
 } lockobject;
 
 #define lockobject_CAST(op) ((lockobject *)(op))
@@ -780,12 +843,20 @@ lock_acquire_parse_args(PyObject *args, PyObject *kwds,
 static PyObject *
 lock_PyThread_acquire_lock(PyObject *op, PyObject *args, PyObject *kwds)
 {
+    PyThreadState* tstate = PyThreadState_Get();
+
+#ifdef Py_DEBUG
+    fprintf(stderr, "[_threadmodule.c] Thread %llu lock_PyThread_acquire_lock\n", PyThreadState_GetID(tstate));
+#endif
+
     lockobject *self = lockobject_CAST(op);
 
     PyTime_t timeout;
     if (lock_acquire_parse_args(args, kwds, &timeout) < 0) {
         return NULL;
     }
+
+    _PyScheduler_lockobject_Acquire(&tstate->interp->scheduler, &self->scheduler_lock, timeout < 0);
 
     PyLockStatus r = _PyMutex_LockTimed(&self->lock, timeout,
                                         _PY_LOCK_HANDLE_SIGNALS | _PY_LOCK_DETACH);
@@ -822,12 +893,20 @@ Lock the lock.");
 static PyObject *
 lock_PyThread_release_lock(PyObject *op, PyObject *Py_UNUSED(dummy))
 {
+    PyThreadState* tstate = PyThreadState_Get();
+
+#ifdef Py_DEBUG
+    fprintf(stderr, "[_threadmodule.c] Thread %llu lock_PyThread_release_lock\n", PyThreadState_GetID(tstate));
+#endif
+
     lockobject *self = lockobject_CAST(op);
     /* Sanity check: the lock must be locked */
     if (_PyMutex_TryUnlock(&self->lock) < 0) {
         PyErr_SetString(ThreadError, "release unlocked lock");
         return NULL;
     }
+
+    _PyScheduler_lockobject_Release(&tstate->interp->scheduler, &self->scheduler_lock);
 
     Py_RETURN_NONE;
 }
@@ -973,6 +1052,8 @@ static PyType_Spec lock_type_spec = {
 typedef struct {
     PyObject_HEAD
     _PyRecursiveMutex lock;
+    /* For use in scheduler */
+    _PyScheduler_rlockobject scheduler_lock;
 } rlockobject;
 
 #define rlockobject_CAST(op)    ((rlockobject *)(op))
@@ -1004,12 +1085,21 @@ rlock_dealloc(PyObject *self)
 static PyObject *
 rlock_acquire(PyObject *op, PyObject *args, PyObject *kwds)
 {
+    PyThreadState* tstate = PyThreadState_Get();
+#ifdef Py_DEBUG
+    fprintf(stderr, "[_threadmodule.c] Thread %llu rlock_acquire\n", PyThreadState_GetID(tstate));
+#endif
+
     rlockobject *self = rlockobject_CAST(op);
     PyTime_t timeout;
 
     if (lock_acquire_parse_args(args, kwds, &timeout) < 0) {
         return NULL;
     }
+
+    _PyScheduler_rlockobject_Acquire(&tstate->interp->scheduler,
+                                     &self->scheduler_lock,
+                                     timeout < 0);
 
     PyLockStatus r = _PyRecursiveMutex_LockTimed(&self->lock, timeout,
                                                  _PY_LOCK_HANDLE_SIGNALS | _PY_LOCK_DETACH);
@@ -1046,12 +1136,21 @@ Lock the lock.");
 static PyObject *
 rlock_release(PyObject *op, PyObject *Py_UNUSED(dummy))
 {
+    PyThreadState* tstate = PyThreadState_Get();
+
+#ifdef Py_DEBUG
+    fprintf(stderr, "[_threadmodule.c] Thread %llu rlock_release\n", PyThreadState_GetID(tstate));
+#endif
+
     rlockobject *self = rlockobject_CAST(op);
     if (_PyRecursiveMutex_TryUnlock(&self->lock) < 0) {
         PyErr_SetString(PyExc_RuntimeError,
                         "cannot release un-acquired lock");
         return NULL;
     }
+
+    _PyScheduler_rlockobject_Release(&tstate->interp->scheduler, &self->scheduler_lock);
+
     Py_RETURN_NONE;
 }
 
@@ -1172,6 +1271,11 @@ rlock_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
         return NULL;
     }
     self->lock = (_PyRecursiveMutex){0};
+    self->scheduler_lock = (_PyScheduler_rlockobject){
+        .locked = 0,
+        .level = 0,
+        .owner = NULL
+    };
     return (PyObject *) self;
 }
 
@@ -1263,6 +1367,9 @@ newlockobject(PyObject *module)
         return NULL;
     }
     self->lock = (PyMutex){0};
+    self->scheduler_lock = (_PyScheduler_lockobject){
+        .locked = 0
+    };
     return self;
 }
 

@@ -7,6 +7,7 @@
 #include "pycore_pylifecycle.h"   // _PyErr_Print()
 #include "pycore_pystats.h"       // _Py_PrintSpecializationStats()
 #include "pycore_runtime.h"       // _PyRuntime
+#include "pycore_scheduler.h"
 
 
 /*
@@ -129,6 +130,9 @@ update_eval_breaker_for_thread(PyInterpreterState *interp, PyThreadState *tstate
 #define COND_SIGNAL(cond) \
     if (PyCOND_SIGNAL(&(cond))) { \
         Py_FatalError("PyCOND_SIGNAL(" #cond ") failed"); };
+#define COND_BROADCAST(cond) \
+    if (PyCOND_BROADCAST(&(cond))) { \
+        Py_FatalError("PyCOND_BROADCAST(" #cond ") failed"); };
 #define COND_WAIT(cond, mut) \
     if (PyCOND_WAIT(&(cond), &(mut))) { \
         Py_FatalError("PyCOND_WAIT(" #cond ") failed"); };
@@ -203,15 +207,12 @@ static inline void
 drop_gil_impl(PyThreadState *tstate, struct _gil_runtime_state *gil)
 {
     MUTEX_LOCK(gil->mutex);
-#ifdef Py_DEBUG
-    fprintf(stderr, "[Thread %lld] I have dropped the GIL\n", PyThreadState_GetID(tstate));
-#endif
     _Py_ANNOTATE_RWLOCK_RELEASED(&gil->locked, /*is_write=*/1);
-    _Py_atomic_store_int_relaxed(&gil->locked, 0);
+    _Py_atomic_store_int(&gil->locked, 0);
     if (tstate != NULL) {
         tstate->holds_gil = 0;
     }
-    COND_SIGNAL(gil->cond);
+    COND_BROADCAST(gil->cond);
     MUTEX_UNLOCK(gil->mutex);
 }
 
@@ -323,13 +324,9 @@ take_gil(PyThreadState *tstate)
 
     MUTEX_LOCK(gil->mutex);
 
-#ifdef Py_DEBUG
-    fprintf(stderr, "[Thread %lld] Attempting to take_gil\n", PyThreadState_GetID(tstate));
-#endif
-
     int drop_requested = 0;
     while (1) {
-        int locked = _Py_atomic_load_int_relaxed(&gil->locked);
+        int locked = _Py_atomic_load_int(&gil->locked);
         if (locked) {
             unsigned long saved_switchnum = gil->switch_number;
 
@@ -344,49 +341,40 @@ take_gil(PyThreadState *tstate)
             to ask the GIL-holding thread to drop it. 
             
             After addition of the scheduler, the drop request has no effect. */
-            if (timed_out &&
-                _Py_atomic_load_int_relaxed(&gil->locked) &&
-                gil->switch_number == saved_switchnum)
-            {
-                PyThreadState *holder_tstate =
-                    (PyThreadState*)_Py_atomic_load_ptr_relaxed(&gil->last_holder);
-                if (_PyThreadState_MustExit(tstate)) {
-                    MUTEX_UNLOCK(gil->mutex);
-                    // gh-96387: If the loop requested a drop request in a previous
-                    // iteration, reset the request. Otherwise, drop_gil() can
-                    // block forever waiting for the thread which exited. Drop
-                    // requests made by other threads are also reset: these threads
-                    // may have to request again a drop request (iterate one more
-                    // time).
-                    if (drop_requested) {
-                        _Py_unset_eval_breaker_bit(holder_tstate, _PY_GIL_DROP_REQUEST_BIT);
-                    }
-                    // gh-87135: hang the thread as *thread_exit() is not a safe
-                    // API. It lacks stack unwind and local variable destruction.
-                    _PyThreadState_HangThread(tstate);
-                }
-                assert(_PyThreadState_CheckConsistency(tstate));
+            // if (timed_out &&
+            //     _Py_atomic_load_int_relaxed(&gil->locked) &&
+            //     gil->switch_number == saved_switchnum)
+            // {
+            //     PyThreadState *holder_tstate =
+            //         (PyThreadState*)_Py_atomic_load_ptr_relaxed(&gil->last_holder);
+            //     if (_PyThreadState_MustExit(tstate)) {
+            //         MUTEX_UNLOCK(gil->mutex);
+            //         // gh-96387: If the loop requested a drop request in a previous
+            //         // iteration, reset the request. Otherwise, drop_gil() can
+            //         // block forever waiting for the thread which exited. Drop
+            //         // requests made by other threads are also reset: these threads
+            //         // may have to request again a drop request (iterate one more
+            //         // time).
+            //         if (drop_requested) {
+            //             _Py_unset_eval_breaker_bit(holder_tstate, _PY_GIL_DROP_REQUEST_BIT);
+            //         }
+            //         // gh-87135: hang the thread as *thread_exit() is not a safe
+            //         // API. It lacks stack unwind and local variable destruction.
+            //         _PyThreadState_HangThread(tstate);
+            //     }
+            //     assert(_PyThreadState_CheckConsistency(tstate));
 
-                _Py_set_eval_breaker_bit(holder_tstate, _PY_GIL_DROP_REQUEST_BIT);
-                drop_requested = 1;
-            }
+            //     _Py_set_eval_breaker_bit(holder_tstate, _PY_GIL_DROP_REQUEST_BIT);
+            //     drop_requested = 1;
+            // }
         } else {
             PyThreadState* next = _Py_atomic_load_ptr(&tstate->interp->scheduler.next);
             if (next == NULL) {
-#ifdef Py_DEBUG
-                fprintf(stderr, "[Thread %lld] WARNING: there is no next thread set\n",
-                        PyThreadState_GetID(tstate));
-#endif
+                // TODO initialize with initial thread
                 break;
             } else if (tstate == next) {
                 break;
             } else {
-#ifdef Py_DEBUG
-                fprintf(stderr,
-                        "[Thread %lld] GIL is not locked, but next is %lld with state %d\n",
-                        PyThreadState_GetID(tstate), PyThreadState_GetID(next),
-                        next->scheduler_state);
-#endif
                 unsigned long interval = _Py_atomic_load_ulong_relaxed(&gil->interval);
                 if (interval < 1) {
                     interval = 1;
@@ -415,12 +403,8 @@ take_gil(PyThreadState *tstate)
     MUTEX_LOCK(gil->switch_mutex);
 #endif
 
-#ifdef Py_DEBUG
-    fprintf(stderr, "[Thread %lld] Acquired the GIL\n", PyThreadState_GetID(tstate));
-#endif
-
     /* We now hold the GIL */
-    _Py_atomic_store_int_relaxed(&gil->locked, 1);
+    _Py_atomic_store_int(&gil->locked, 1);
     _Py_ANNOTATE_RWLOCK_ACQUIRED(&gil->locked, /*is_write=*/1);
 
     if (tstate != (PyThreadState*)_Py_atomic_load_ptr_relaxed(&gil->last_holder)) {
@@ -1448,14 +1432,13 @@ _Py_HandlePending(PyThreadState *tstate)
     }
 
     /* GIL drop request */
-    // if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
+    if ((breaker & _PY_GIL_DROP_REQUEST_BIT) != 0) {
         /* Give another thread a chance */
         _PyThreadState_Detach(tstate);
 
         /* Other threads may run now */
-
         _PyThreadState_Attach(tstate);
-    // }
+    }
 
     /* Check for asynchronous exception. */
     if ((breaker & _PY_ASYNC_EXCEPTION_BIT) != 0) {
